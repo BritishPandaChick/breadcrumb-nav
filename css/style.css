@@ -1,3 +1,6 @@
+/*custom font*/
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans);
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +15,7 @@ body {
   padding-top: 100px;
   background: #689976;
   background: linear-gradient(#689976, #ACDACC);
+  font-family: 'Merriweather Sans', arial, verdana;
 }
 
 .breadcrumb {
@@ -34,7 +38,7 @@ body {
   line-height: 36px;
   color: white;
   /* we need more margin on left of links to accomodate the numbers */
-  padding: 0 20px 0 60px;
+  padding: 0 10px 0 60px;
   background: #666;
   background: linear-gradient(#666, #333);
   position: relative;
@@ -50,8 +54,9 @@ body {
   left: 14px;
 }
 
-.breadcrumb a:first-child {
+.breadcrumb a:last-child {
   border-radius: 0 5px 5px 0; /* this was to prevent glitches on hover */
+  padding-right: 20px;
 }
 
 /* hover/active styles */
@@ -113,4 +118,21 @@ body {
   left: 30px;
   background: #444;
   background: linear-gradient(#444, #222);
+  font-weight: bold;
+}
+
+/* Flat Styles */
+.flat a, .flat a:after {
+  background: white;
+  color: black;
+  transition: all 0.5s;
+}
+
+.flat a:before {
+  background: white;
+  box-shadow: 1px solid #ccc;
+}
+
+.flat a:hover, .flat a.active, .flat a:hover:after, .flat a.active:after {
+  background: #9EEB62;
 }
