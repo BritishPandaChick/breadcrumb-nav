@@ -21,7 +21,7 @@ body {
 .breadcrumb {
   /* centering */
   display: inline-block;
-  box-shadow: 0 0 15px 1px rgba(0,0,0, 0.35);
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);
   overflow: hidden;
   border-radius: 5px;
   /* Let's add the numbers for each link using CSS counters */
@@ -89,12 +89,10 @@ body {
   background: linear-gradient(135deg, #666, #333);
   /* stylish arrow design using box shadow */
   box-shadow:
-    2px -2px 0 2px rgba(0, 0,0,0.4),
-    3px -3px 0 2px rgba(255,255,255,0.1);
+    2px -2px 0 2px rgba(0, 0, 0, 0.4),
+    3px -3px 0 2px rgba(255, 255, 255, 0.1);
   /* 5px for rounded arrows and to
   50px to prevent hover glitches on the border created using shadows */
-  border: 1px solid white;
-  /* the curved border on the left helps in seamless integration of the arrows and link gradients without any interruption from the box shadows provided to the arrows. specially during hover effect. */
   border-radius: 0 5px 0 50px;
 }
 
@@ -130,7 +128,7 @@ body {
 
 .flat a:before {
   background: white;
-  box-shadow: 1px solid #ccc;
+  box-shadow: 0 0 0 1px #ccc;
 }
 
 .flat a:hover, .flat a.active, .flat a:hover:after, .flat a.active:after {
